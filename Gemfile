@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'rest-client'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
 group :development, :test do
@@ -42,6 +43,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   # rspec-rails is a testing framework for Rails 3+.
   gem 'pry-byebug'
+  # Pre load rspec tests, amazing speed
+  gem 'spring-commands-rspec'
 end
 
 group :development do
