@@ -1,17 +1,18 @@
-# Usa essa imagem para gerar nosso container
-FROM ruby:2.4.1-slim
-# Instala nossas dependencias
+FROM ruby:2.3-slim
+# Instala as nossas dependencias
 RUN apt-get update && apt-get install -qq -y --no-install-recommends \
-      build-essential nodejs libpq-dev imagemagick
+      build-essential nodejs libpq-dev
 # Seta nosso path
-ENV INSTALL_PATH /app
+ENV INSTALL_PATH /usr/src/app
 # Cria nosso diretório
 RUN mkdir -p $INSTALL_PATH
 # Seta o nosso path como o diretório principal
 WORKDIR $INSTALL_PATH
 # Copia o nosso Gemfile para dentro do container
-COPY Gemfile Gemfile.lock ./
-# Seta o path para as Gems
-ENV BUNDLE_PATH /box
+COPY Gemfile ./
+# Instala as Gems
+RUN bundle install
 # Copia nosso código para dentro do container
 COPY . .
+# Roda nosso servidor
+CMD puma -C config/puma.rb
