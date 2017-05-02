@@ -45,6 +45,7 @@ group :development, :test do
   gem 'pry-byebug'
   # Pre load rspec tests, amazing speed
   gem 'spring-commands-rspec'
+  gem "capybara"
 end
 
 group :development do
