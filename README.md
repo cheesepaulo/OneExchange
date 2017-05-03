@@ -15,8 +15,12 @@ Sistema incrivelmente simples para conversão de moedas.
 
 # Stack
 ```
-  * Application  
-  * Postgres
+  * Application
+```
+
+# Dependencies
+```
+  * Fixer.io to consult currency rates
 ```
 
 # Getting Started
