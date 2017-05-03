@@ -1,5 +1,8 @@
 body {
-  background: image-url("/background-img.jpg") no-repeat center center fixed;
+  background-image: url("/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -9,8 +12,8 @@ body {
 .title-box{
   margin-top: 20%;
   .title{
-    color: white;
-    text-shadow: 2px 0px 2px #000000;
+    color: #eceeef;
+    // text-shadow: 2px 0px 2px;
   }
 }
 
