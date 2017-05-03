@@ -7,7 +7,7 @@
 
 #Sobre o projeto
 
-Sistema incrívelmente simples para conversão de moedas.
+Sistema incrívelmente simples para conversão de moedas. 
 
 # Stack
 ```
