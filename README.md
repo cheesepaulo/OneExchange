@@ -11,7 +11,7 @@ Sistema incrivelmente simples para conversão de moedas.
 
 ###[Clique e veja online](https://one-exchange.herokuapp.com/)
 
-![alt text](/images/screenshot.png "One Exchange")
+![One Exchange](https://raw.githubusercontent.com/cheesepaulo/OneExchange/master/app/assets/images/screenshot.png)
 
 # Stack
 ```
