@@ -34,3 +34,5 @@ Sistema incrivelmente simples para conversão de moedas.
 ```
   * docker-compose run --rm website rspec
 ```
+
+# Made With <3 on OneBitCode - Bootcamp Super Full Stack
