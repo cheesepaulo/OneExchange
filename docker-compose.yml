@@ -10,10 +10,19 @@ services:
     depends_on:
       - 'postgres'
     build: .
+    command: bash start
     ports:
       - '3000:3000'
     volumes:
-      - '.:/usr/src/app'
+      - '.:/one_exchange'
+    volumes_from:
+    - box
+
+  box:
+    image: busybox
+    volumes:
+      - /box
 
 volumes:
   postgres:
+  box:
